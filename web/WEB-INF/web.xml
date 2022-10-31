@@ -4,13 +4,21 @@
         <servlet-name>UserServlet</servlet-name>
         <servlet-class>servlets.UserServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UserServlett</servlet-name>
+        <servlet-class>servlets.UserServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
-        <servlet-name>UserServlet</servlet-name>
-        <url-pattern>/UserServlet</url-pattern>
+        <servlet-name>UserServlett</servlet-name>
+        <url-pattern>/User</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>User</welcome-file>
+    </welcome-file-list>
 </web-app>
